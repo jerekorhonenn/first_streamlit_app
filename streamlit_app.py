@@ -1,6 +1,6 @@
 import streamlit
 import requests
-
+import snowflake.connector
 
 streamlit.title('My Parents New Healthy Diner')
 
@@ -36,3 +36,4 @@ streamlit.text(fruityvice_response)
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Out put the normalized response as table
 streamlit.dataframe(fruityvice_normalized)
+
