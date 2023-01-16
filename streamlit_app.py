@@ -70,6 +70,3 @@ if streamlit.button('Add a Fruit to the List'):
   back_from_function = insert_row_snowflake(add_my_fruit)
   my_cnx.close()
   
-
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + new_fruit)
-streamlit.text(fruityvice_response)
